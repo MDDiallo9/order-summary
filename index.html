@@ -28,7 +28,7 @@
     .container{
       /* border: 3px solid red; */
       width: 300px;
-      height: 500px;
+      height: 470px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -52,7 +52,7 @@ border-top-right-radius: 10px;
     .text{
       width: 80%;
       margin: 0 auto;
-      font-size: 16px;
+      font-size: 12px;
       color: hsl(224, 23%, 55%);
       text-align: center;
     }
@@ -60,10 +60,12 @@ border-top-right-radius: 10px;
       display: flex;
       background-color: hsl(225, 100%, 98%);
       border-radius: 10px;
-      padding: 5px 20px;
-      gap: 5px;
+      padding: 12px 10px;
+      width: 250px;
+      /* gap: 5px; */
       margin-top: 15px;
       align-items: center;
+      justify-content: space-between;
     }
     button{
       background-color: hsl(245, 75%, 52%);
@@ -78,6 +80,16 @@ border-top-right-radius: 10px;
       margin-top: 20px;
       font-size: 12px;
     }
+    .icon{
+      display: flex;
+      gap: 10px;
+      color: hsl(224, 23%, 55%);
+
+    }
+    span{
+      font-weight: 700;
+      color: black;
+    }
   </style>
 </head>
 <body>
@@ -91,9 +103,9 @@ border-top-right-radius: 10px;
     device anywhere you like!
   </div>
   <div class="plan">
-    <div class="icon"><img src="./images/icon-music.svg" alt=""></div>
-    <div class="plans">Annual Plan<br>
-      $59.99/year</div>
+    <div class="icon"><img src="./images/icon-music.svg" alt=""><div class="plans"> <span>Annual Plan</span><br>
+      $59.99/year</div></div>
+    
     <div class="change"><a href="#">Change</a></div>
   </div>
   <button>Proceed to Payment</button>
